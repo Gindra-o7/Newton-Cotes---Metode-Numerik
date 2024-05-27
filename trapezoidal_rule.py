@@ -12,7 +12,7 @@ def f3(x):
     return (x**2 + 1) / np.sqrt(x**3 + 3*x)
 
 def f4(x):
-    return x**2 - 6*x + 8
+    return np.abs(x**2 - 6*x + 8)
 
 # Kaidah Trapesium
 def trapezoidal_rule(f, a, b, h):

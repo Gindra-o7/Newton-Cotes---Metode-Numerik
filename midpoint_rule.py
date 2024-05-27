@@ -12,7 +12,7 @@ def f3(x):
     return (x**2 + 1) / np.sqrt(x**3 + 3*x)
 
 def f4(x):
-    return x**2 - 6*x + 8
+    return np.abs(x**2 - 6*x + 8)
 
 # Kaidah Titik Tengah
 def midpoint_rule(f, a, b, h):
@@ -24,10 +24,10 @@ def midpoint_rule(f, a, b, h):
 
 # Batas-batas integrasi
 limits = [
-    (-1, 0),  # Soal 5
-    (-3, 3),  # Soal 6
-    (1, 3),   # Soal 7
-    (0, 8)    # Soal 10
+    (-1, 0),
+    (-3, 3),
+    (1, 3),
+    (0, 8)
 ]
 
 # Fungsi-fungsi

@@ -49,7 +49,7 @@ for i, (a, b) in enumerate(limits):
     print()
     
     # Buat tabel
-    data = {'r': [f'{j+1}/2' for j in range(len(x_values))], 'x_r': np.round(x_values, 3), 'f_r': np.round(y_values, 3)}
+    data = {'r': [f'{2*j+1}/2' for j in range(len(x_values))], 'x_r': np.round(x_values, 3), 'f_r': np.round(y_values, 3)}
     df = pd.DataFrame(data)
     print(df.to_string(index=False, float_format='{:.3f}'.format))
     print()
